@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AngelEVE | permanentní makeup, OxyGeneo, depilace nití – Říčany</title>
-<meta name="description" content="Kosmetický salon AngelEVE v Říčanech u Prahy. Permanentní makeup, ošetření OxyGeneo, depilace nití, tripolární radiofrekvence, ultrazvuková špachtle a kosmetické služby.">
+<meta name="description" content="Jsem Eva Ledvinková a ve svém salonu AngelEVE v Říčanech u Prahy provádím permanentní makeup, ošetření OxyGeneo, depilaci nití, tripolární radiofrekvenci a další kosmetické služby.">
 <link rel="icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,7 +111,25 @@ section{padding:clamp(72px,11vw,140px) 0}
 .list li span{font-family:var(--serif);color:var(--brown);font-size:20px;line-height:1.4}
 .list strong{font-weight:500;color:var(--ink)}
 .list p{margin:2px 0 0;color:var(--muted);font-size:16px}
-.pmu-parts{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(20px,3vw,44px);margin-top:clamp(56px,7vw,90px)}
+.pmu-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(44px,6vw,72px)}
+.pmu-head .lead{margin:0}
+.pmu-methods{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.6vw,36px)}
+.pmu-methods article{border-top:1px solid var(--brown);padding-top:26px;position:relative}
+.pmu-methods .ico{width:46px;height:46px;color:var(--brown);display:block;margin-bottom:18px}
+.pmu-methods .num{position:absolute;top:26px;right:0;font-family:var(--serif);font-style:italic;color:var(--brown-soft);font-size:18px}
+.pmu-methods h3{font-size:24px;margin-bottom:10px}
+.pmu-methods p{color:var(--muted);font-size:15.5px;margin:0}
+.pmu-process{margin-top:clamp(56px,7vw,96px);background:var(--cream);padding:clamp(32px,4.5vw,64px)}
+.pmu-process-title{font-size:clamp(26px,2.6vw,34px);margin-bottom:clamp(28px,3.5vw,44px)}
+.pmu-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(22px,3vw,40px);counter-reset:none}
+.pmu-steps li{position:relative}
+.pmu-steps .ico{width:40px;height:40px;color:var(--brown);display:block;margin-bottom:14px}
+.pmu-steps .step-n{position:absolute;top:6px;right:0;font-size:12px;letter-spacing:.2em;color:var(--brown-soft)}
+.pmu-steps h4{font-family:var(--serif);font-weight:500;font-size:21px;color:var(--ink);margin:0 0 8px;line-height:1.2}
+.pmu-steps p{color:var(--muted);font-size:15px;margin:0}
+.pmu-parts h3{display:flex;align-items:center;gap:12px}
+.pmu-parts h3 .ico{width:34px;height:34px;color:var(--brown);flex:none}
+.pmu-parts{display:grid;grid-template-columns:1fr;max-width:760px;gap:clamp(20px,3vw,44px);margin-top:clamp(56px,7vw,90px)}
 .pmu-parts article{border-top:1px solid var(--brown);padding-top:22px}
 .pmu-parts h3{font-size:26px;margin-bottom:10px}
 .pmu-parts p{color:var(--muted);font-size:16px}
@@ -246,6 +264,8 @@ footer p{color:var(--muted);font-size:14px;margin:0}
 /* responsive */
 @media (max-width:980px){
   .pmu-parts{grid-template-columns:1fr}
+  .pmu-head{grid-template-columns:1fr;align-items:start}
+  .pmu-methods,.pmu-steps{grid-template-columns:1fr 1fr}
   .brands{grid-template-columns:1fr}
 }
 @media (max-width:860px){
@@ -265,6 +285,8 @@ footer p{color:var(--muted);font-size:14px;margin:0}
   .services{grid-template-columns:1fr}
 }
 @media (max-width:560px){
+  .pmu-methods,.pmu-steps{grid-template-columns:1fr}
+  .pmu-process{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1)}
   body{font-size:16px}
   form{grid-template-columns:1fr}
   .hero-meta{gap:22px}
@@ -294,7 +316,7 @@ footer p{color:var(--muted);font-size:14px;margin:0}
     <symbol id="i-meso" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c-7 10-11 16-11 22a11 11 0 0 0 22 0c0-6-4-12-11-22z"/><path d="M18 29a6 6 0 0 0 6 6"/></g></symbol>
     <symbol id="i-teen" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40V22"/><path d="M24 26c-8 0-12-5-12-12 8 0 12 5 12 12z"/><path d="M24 22c0-7 4-12 12-12 0 7-4 12-12 12z"/><path d="M16 40h16"/></g></symbol>
     <symbol id="i-lash" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14c6-5 14-6 22-4 5 1 10 3 14 6"/><path d="M6 30c5 5 11 7 18 7s13-2 18-7"/><path d="M10 33l-3 5M16 36l-2 5M24 37v5M32 36l2 5M38 33l3 5"/></g></symbol>
-    <symbol id="i-cert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.2 1.6 2.7-.2.9 2.6 2.3 1.4-.8 2.6.8 2.6-2.3 1.4-.9 2.6-2.7-.2L12 18.5l-2.2-1.6-2.7.2-.9-2.6-2.3-1.4.8-2.6-.8-2.6 2.3-1.4.9-2.6 2.7.2z"/><path d="m8.8 10.6 2.2 2.2 4.2-4.3"/><path d="M8 17.5 7 22l5-2 5 2-1-4.5"/></g></symbol>
+    <symbol id="i-hair" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30c8-9 22-12 36-5"/><path d="M10 33l3-8M15 31l4-9M21 29l4-9M27 28l5-8M33 28l5-6M39 29l4-4"/></g></symbol><symbol id="i-blade" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 39L31 17"/><path d="M31 17l5-5 3 3-5 5z"/><path d="M36 12l3-3"/><path d="M8 26c5-5 11-8 18-9" opacity=".55"/></g></symbol><symbol id="i-3d" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26c8-9 22-11 36-4"/><path d="M8 33c8-8 20-9 32-3" opacity=".5"/><path d="M12 29l3-6M19 27l3-7M26 26l4-6M33 26l4-5"/></g></symbol><symbol id="i-shade" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 31c8-10 24-13 36-5-11-2-24-1-36 5z"/><path d="M13 28h.01M19 25.5h.01M25 24h.01M31 24h.01M36 25h.01M17 29h.01M23 27h.01M29 26.5h.01" stroke-width="2.4"/></g></symbol><symbol id="i-talk" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h32v21H23l-8 7v-7H8z"/><path d="M15 18h18M15 24h11"/></g></symbol><symbol id="i-draw" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19c9-7 22-8 34-2"/><path d="M14 41l1-5 17-17 4 4-17 17z"/><path d="M29 22l4 4"/></g></symbol><symbol id="i-drop" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 7c6 9 12 15 12 22a12 12 0 0 1-24 0c0-7 6-13 12-22z"/><path d="M19 30a5 5 0 0 0 5 5"/></g></symbol><symbol id="i-cal" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="11" width="32" height="29" rx="3"/><path d="M8 19h32M16 7v8M32 7v8"/><path d="M15 27h4M22 27h4M29 27h4M15 33h4M22 33h4"/></g></symbol><symbol id="i-check" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><path d="M17 24.5l5 5 9.5-10.5"/></g></symbol><symbol id="i-cert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.2 1.6 2.7-.2.9 2.6 2.3 1.4-.8 2.6.8 2.6-2.3 1.4-.9 2.6-2.7-.2L12 18.5l-2.2-1.6-2.7.2-.9-2.6-2.3-1.4.8-2.6-.8-2.6 2.3-1.4.9-2.6 2.7.2z"/><path d="m8.8 10.6 2.2 2.2 4.2-4.3"/><path d="M8 17.5 7 22l5-2 5 2-1-4.5"/></g></symbol>
   </defs>
 </svg>
 
@@ -318,10 +340,10 @@ footer p{color:var(--muted);font-size:14px;margin:0}
     <div>
       <div class="eyebrow reveal">Kosmetický salon · Říčany</div>
       <h1 class="reveal" style="--d:.1s">Permanentní makeup<br><em>…buďte neustále krásná</em></h1>
-      <p class="lead reveal" style="--d:.2s">Provádíme kosmetické služby na profesionální úrovni – permanentní makeup, hluboké omlazení obličeje metodou OxyGeneo, depilaci nití a další ošetření pleti.</p>
+      <p class="lead reveal" style="--d:.2s">Provádím kosmetické služby na profesionální úrovni – permanentní makeup, hluboké omlazení obličeje metodou OxyGeneo, depilaci nití a další ošetření pleti.</p>
       <div class="actions reveal" style="--d:.3s">
         <a href="#kontakt" class="btn solid">Domluvte si svůj termín</a>
-        <a href="#sluzby" class="link">Naše služby</a>
+        <a href="#sluzby" class="link">Moje služby</a>
       </div>
       <div class="hero-meta reveal" style="--d:.4s">
         <div><strong>od roku 2017</strong>salon AngelEVE</div>
@@ -338,8 +360,8 @@ footer p{color:var(--muted);font-size:14px;margin:0}
 <!-- INTRO -->
 <section class="intro">
   <div class="wrap">
-    <p class="quote reveal">Kosmetika je naším koníčkem. Naše klientky jsou u nás <em>na prvním místě.</em></p>
-    <p class="sub reveal" style="--d:.1s">U nás jste vždy na prvním místě vy. Salon AngelEVE je místem klidu a relaxace, kde se můžete na chvíli zastavit a nechat o sebe pečovat. Odejdete odpočatá, s pletí, která je svěží a omlazená, a s výsledky, které jsou viditelné na první pohled.</p>
+    <p class="quote reveal">Kosmetika je mým koníčkem. Mé klientky jsou u mě <em>na prvním místě.</em></p>
+    <p class="sub reveal" style="--d:.1s">U mě jste vždy na prvním místě vy. Svůj salon AngelEVE jsem vytvořila jako místo klidu a relaxace, kde se můžete na chvíli zastavit a nechat se mnou o sebe pečovat. Odejdete odpočatá, s pletí, která je svěží a omlazená, a s výsledky, které jsou viditelné na první pohled.</p>
   </div>
 </section>
 
@@ -351,12 +373,12 @@ footer p{color:var(--muted);font-size:14px;margin:0}
         <img src="img/eva-ledvinkova.jpg" alt="Eva Ledvinková, majitelka salonu AngelEVE" width="933" height="1400" loading="lazy">
       </div>
       <div class="owner-text">
-        <div class="eyebrow reveal">Kdo o vás pečuje</div>
+        <div class="eyebrow reveal">Kdo o vás bude pečovat</div>
         <h2 class="h2 reveal" style="--d:.1s">Eva Ledvinková</h2>
         <p class="owner-role reveal" style="--d:.15s">majitelka salonu AngelEVE</p>
         <p class="reveal" style="--d:.2s">Salon AngelEVE jsem otevřela v roce 2017 a všechna ošetření v něm provádím osobně – od permanentního makeupu přes přístrojová ošetření pleti OxyGeneo a tripolární radiofrekvenci až po chemické peelingy a depilaci nití.</p>
         <p class="reveal" style="--d:.25s">Kosmetika je mým koníčkem i posláním. Neustále se vzdělávám a do nabídky zařazuji jen metody a přípravky, které mám ověřené v praxi i na sobě. Pracuji s profesionální kosmetikou NEOSTRATA®, Exuviance® a IDENEL a s technologiemi, ve kterých jsem certifikovaná.</p>
-        <p class="reveal" style="--d:.3s">Mých služeb využívají desítky spokojených klientů. Ať už k nám přijdete na obočí, nebo na komplexní omlazení pleti, mým cílem je, abyste odcházela odpočatá a s výsledkem, který vás potěší.</p>
+        <p class="reveal" style="--d:.3s">Mých služeb využívají desítky spokojených klientů. Ať už ke mně přijdete na obočí, nebo na komplexní omlazení pleti, mým cílem je, abyste odcházela odpočatá a s výsledkem, který vás potěší.</p>
         <div class="owner-stats reveal" style="--d:.35s">
           <div><strong>2017</strong>otevření salonu</div>
           <div><strong>3</strong>certifikace</div>
@@ -367,7 +389,7 @@ footer p{color:var(--muted);font-size:14px;margin:0}
 
     <div class="cert-head">
       <div class="eyebrow reveal">Certifikace</div>
-      <h3 class="reveal" style="--d:.1s">Jsme certifikovaní</h3>
+      <h3 class="reveal" style="--d:.1s">Moje certifikace</h3>
     </div>
     <div class="cert-grid">
       <article class="cert reveal">
@@ -406,28 +428,28 @@ footer p{color:var(--muted);font-size:14px;margin:0}
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow reveal">Provádíme</div>
+        <div class="eyebrow reveal">Provádím</div>
         <h2 class="h2 reveal" style="--d:.1s">Kosmetické služby<br>na profesionální úrovni</h2>
       </div>
-      <p class="lead reveal" style="--d:.2s">Máme bohaté zkušenosti s kosmetickými úpravami a pracujeme pouze s kvalitními přípravky, osvědčenými v praxi i na nás samotných.</p>
+      <p class="lead reveal" style="--d:.2s">Mám bohaté zkušenosti s kosmetickými úpravami a pracuji pouze s kvalitními přípravky, osvědčenými v praxi i na mně samotné.</p>
     </div>
 
     <div class="services">
       <article class="service reveal">
         <div class="svc-top"><svg class="ico"><use href="#i-pmu"/></svg><span class="num">01</span></div>
         <h3>Permanentní makeup</h3>
-        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsme certifikovaní · PhiBrows Artist</a>
-        <p>Vláskové obočí provádíme metodou PhiBrows – mezinárodně uznávanou technikou microbladingu, ve které jsme certifikovaní na úrovni Artist. Dále nabízíme přístrojové stínované obočí, kombinaci technik a oční linky. Představte si, že kdykoliv můžete vypadat, jako když jste právě vyšla ze salonu!</p>
+        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsem certifikovaná · PhiBrows Artist</a>
+        <p>Vláskové obočí provádím metodou PhiBrows – mezinárodně uznávanou technikou microbladingu, ve které jsem certifikovaná na úrovni Artist. Dále nabízím přístrojové stínované obočí, kombinaci technik a oční linky. Představte si, že kdykoliv můžete vypadat, jako když jste právě vyšla ze salonu!</p>
         <div class="svc-foot"><span class="svc-price">od 2.100 Kč</span><a href="#permanentni-makeup" class="link">Více informací</a></div>
       </article>
 
       <article class="service reveal" style="--d:.08s">
         <div class="svc-top"><svg class="ico"><use href="#i-oxy"/></svg><span class="num">02</span></div>
         <h3>OxyGeneo</h3>
-        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsme certifikovaní · geneO+ oxyGeneo</a>
-        <p>Přístrojové ošetření pro hluboké omlazení obličeje s infuzí základních živin a účinných látek pro obnovu a okysličení pokožky. Výběr z řady hydrate, revive, illuminate, detox, balance – dle typu a potřeby pleti, nebo řada glam a retouch.</p>
+        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsem certifikovaná · geneO+ oxyGeneo</a>
+        <p>Přístrojovým ošetřením hluboce omladím váš obličej a do pokožky vpravím základní živiny a účinné látky, které ji obnoví a okysličí. Podle typu a potřeb vaší pleti vyberu řadu hydrate, revive, illuminate, detox nebo balance, případně řadu glam a retouch.</p>
         <div class="more" id="more-oxy">
-          <p><strong>Ošetření zahrnuje</strong> čištění (dle potřeby i mechanické či peeling, dočištění ultrazvukovou špachtlí), samotnou OxyGeneoterapii obličeje, krku, dekoltu, případně hřbetů rukou, masáž obličeje, krku, dekoltu a rukou, masku dle typu pleti s podporou LED terapie červeným světlem a úpravu obočí. Dle přání je možné doplnit o threading nežádoucích chloupků v oblasti obličeje, barvení obočí či řas za příplatek.</p>
+          <p><strong>Při ošetření</strong> vám pleť vyčistím (podle potřeby i mechanicky či peelingem a dočistím ultrazvukovou špachtlí), provedu samotnou OxyGeneoterapii obličeje, krku, dekoltu, případně hřbetů rukou, namasíruji obličej, krk, dekolt a ruce, nanesu masku podle typu pleti s podporou LED terapie červeným světlem a upravím obočí. Na přání vám za příplatek odstraním nežádoucí chloupky v obličeji threadingem nebo obarvím obočí či řasy.</p>
           <p><a href="#oxygeneo">Jak OxyGeneo funguje →</a></p>
         </div>
         <button class="link toggle" data-target="more-oxy" aria-expanded="false">Co ošetření zahrnuje</button>
@@ -437,11 +459,11 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal">
         <div class="svc-top"><svg class="ico"><use href="#i-rf"/></svg><span class="num">03</span></div>
         <h3>Tripolární radiofrekvence</h3>
-        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsme certifikovaní · geneO+ TriPollar</a>
-        <p>Hladší a pevnější pokožka, redukce jemných linek a vrásek, vylepšení kožní struktury. TriPollar využívá radiofrekvenční energii k vyvolání regenerace kolagenu a elastinu v dermis.</p>
+        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsem certifikovaná · geneO+ TriPollar</a>
+        <p>Vaše pokožka bude hladší a pevnější, zredukuji jemné linky a vrásky a vylepším strukturu pleti. Pracuji s technologií TriPollar, která radiofrekvenční energií nastartuje regeneraci kolagenu a elastinu v dermis.</p>
         <div class="more" id="more-rf">
-          <p><strong>Ošetření zahrnuje</strong> čištění (dle potřeby i mechanické či peeling, dočištění ultrazvukovou špachtlí), samotnou tripolární radiofrekvenci obličeje, krku a dekoltu, masáž obličeje, krku a dekoltu, masku dle typu pleti s podporou LED terapie červeným světlem a úpravu obočí. Dle přání je možné doplnit o threading nežádoucích chloupků v oblasti obličeje, barvení obočí či řas za příplatek.</p>
-          <p>Patentovaná tripolární technologie násobí efekty bipolární radiofrekvenční energie využitím jedinečného systému ovládání toku energie mezi třemi elektrodami. Nevyužívá žádný druh světla, je tedy vhodná pro všechny druhy i fototypy pleti, a to po celý rok. Ošetření je zcela bezbolestné a výsledky jsou viditelné hned po prvním ošetření.</p>
+          <p><strong>Při ošetření</strong> vám pleť vyčistím (podle potřeby i mechanicky či peelingem a dočistím ultrazvukovou špachtlí), provedu samotnou tripolární radiofrekvenci obličeje, krku a dekoltu, namasíruji obličej, krk a dekolt, nanesu masku podle typu pleti s podporou LED terapie červeným světlem a upravím obočí. Na přání vám za příplatek odstraním nežádoucí chloupky v obličeji threadingem nebo obarvím obočí či řasy.</p>
+          <p>Patentovaná tripolární technologie, se kterou pracuji, násobí efekty bipolární radiofrekvenční energie díky jedinečnému systému ovládání toku energie mezi třemi elektrodami. Nevyužívá žádný druh světla, proto ji mohu použít u všech typů i fototypů pleti, a to po celý rok. Ošetření je zcela bezbolestné a výsledky uvidíte hned po prvním ošetření.</p>
         </div>
         <button class="link toggle" data-target="more-rf" aria-expanded="false">Co ošetření zahrnuje</button>
         <div class="svc-foot"><span class="svc-price">3.300 Kč</span><span class="svc-time">cca 100 min</span></div>
@@ -450,10 +472,10 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal" style="--d:.08s">
         <div class="svc-top"><svg class="ico"><use href="#i-cosm"/></svg><span class="num">04</span></div>
         <h3>Kosmetické ošetření</h3>
-        <p>Ošetření pleti s profesionální dermokosmetikou NeoStrata® a Exuviance® – přípravky s AHA/PHA kyselinami, peptidy a antioxidanty, vyvinuté na základě dermatologického výzkumu. Čištění, masáž a maska dle typu pleti s podporou LED terapie červeným světlem.</p>
+        <p>Vaši pleť ošetřím profesionální dermokosmetikou NeoStrata® a Exuviance® – přípravky s AHA/PHA kyselinami, peptidy a antioxidanty, vyvinutými na základě dermatologického výzkumu. Pleť vyčistím, namasíruji a nanesu masku podle jejího typu s podporou LED terapie červeným světlem.</p>
         <div class="more" id="more-kosm">
-          <p><strong>Ošetření zahrnuje</strong> čištění (dle potřeby i mechanické či peeling, dočištění ultrazvukovou špachtlí), masáž obličeje, krku, dekoltu a rukou, masku dle typu pleti s podporou LED terapie červeným světlem a úpravu obočí. Dle přání je možné doplnit o threading nežádoucích chloupků v oblasti obličeje, barvení obočí či řas za příplatek.</p>
-          <p><a href="#kosmetika">Kosmetika, kterou používáme →</a></p>
+          <p><strong>Při ošetření</strong> vám pleť vyčistím (podle potřeby i mechanicky či peelingem a dočistím ultrazvukovou špachtlí), namasíruji obličej, krk, dekolt a ruce, nanesu masku podle typu pleti s podporou LED terapie červeným světlem a upravím obočí. Na přání vám za příplatek odstraním nežádoucí chloupky v obličeji threadingem nebo obarvím obočí či řasy.</p>
+          <p><a href="#kosmetika">Kosmetika, kterou používám →</a></p>
         </div>
         <button class="link toggle" data-target="more-kosm" aria-expanded="false">Co ošetření zahrnuje</button>
         <div class="svc-foot"><span class="svc-price">2.300 Kč</span><span class="svc-time">cca 80 min</span></div>
@@ -462,10 +484,10 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal">
         <div class="svc-top"><svg class="ico"><use href="#i-peel"/></svg><span class="num">05</span></div>
         <h3>Chemický peeling NeoStrata</h3>
-        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsme certifikovaní · NEOSTRATA®</a>
-        <p>Profesionální ošetření s ovocnými kyselinami, které účinně obnovuje pleť, sjednocuje tón, pomáhá proti pigmentovým skvrnám a zjemňuje vrásky i nedokonalosti. Ošetření lze provést také jako cílenou péči o pleť s akné. Pleť je po ošetření hladší, jasnější a viditelně svěží už po první proceduře.</p>
+        <a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsem certifikovaná · NEOSTRATA®</a>
+        <p>Ovocnými kyselinami vaši pleť účinně obnovím, sjednotím její tón, pomohu proti pigmentovým skvrnám a zjemním vrásky i nedokonalosti. Ošetření mohu provést také jako cílenou péči o pleť s akné. Už po první proceduře budete mít pleť hladší, jasnější a viditelně svěží.</p>
         <div class="more" id="more-peel">
-          <p><strong>Ošetření zahrnuje</strong> také čištění, masáž obličeje, krku a dekoltu, případné upravení obočí a zklidňující speciální masku NeoStrata s podporou LED terapie červeným světlem.</p>
+          <p><strong>Při ošetření</strong> vám pleť také vyčistím, namasíruji obličej, krk a dekolt, případně upravím obočí a nanesu zklidňující speciální masku NeoStrata s podporou LED terapie červeným světlem.</p>
         </div>
         <button class="link toggle" data-target="more-peel" aria-expanded="false">Co ošetření zahrnuje</button>
         <div class="svc-foot"><span class="svc-price">3.300 Kč</span><span class="svc-time">cca 100 min</span></div>
@@ -474,10 +496,10 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal" style="--d:.08s">
         <div class="svc-top"><svg class="ico"><use href="#i-idenel"/></svg><span class="num">06</span></div>
         <h3>Ošetření IDENEL</h3>
-        <p>Profesionální ošetření s jihokorejskou kosmetikou IDENEL a technologií Altum™ peptidů. Využívá mikrospikule a pokročilý peptidový komplex, které stimulují obnovu pleti, podporují tvorbu kolagenu a zlepšují vstřebávání aktivních látek. Pleť je po ošetření viditelně pevnější, hladší a zářivější.</p>
+        <p>Pracuji s jihokorejskou kosmetikou IDENEL a technologií Altum™ peptidů. Mikrospikule a pokročilý peptidový komplex stimulují obnovu pleti, podporují tvorbu kolagenu a zlepšují vstřebávání aktivních látek. Po ošetření budete mít pleť viditelně pevnější, hladší a zářivější.</p>
         <div class="more" id="more-idenel">
           <p><strong>Technologie Altum™ a Altum™ peptidy.</strong> Pleť přirozeně vstřebá jen asi 0,3 % účinných látek. Patentovaná technologie Altum™ byla vyvinuta, aby tuto hranici překonala a dopravila aktivní látky přesně a hluboko do pleti. Altum™ peptidy, kterými značka svůj vývoj začínala, jsou známé výjimečným účinkem na pružnost pleti a redukci vrásek.</p>
-          <p><strong>Ošetření zahrnuje</strong> také čištění, masáž obličeje, krku a dekoltu, speciální zklidňující masku IDENEL a případné upravení obočí.</p>
+          <p><strong>Při ošetření</strong> vám pleť také vyčistím, namasíruji obličej, krk a dekolt, nanesu speciální zklidňující masku IDENEL a případně upravím obočí.</p>
         </div>
         <button class="link toggle" data-target="more-idenel" aria-expanded="false">Co ošetření zahrnuje</button>
         <div class="svc-foot"><span class="svc-price">3.900 Kč</span><span class="svc-time">cca 100 min</span></div>
@@ -486,11 +508,11 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal">
         <div class="svc-top"><svg class="ico"><use href="#i-meso"/></svg><span class="num">07</span></div>
         <h3>Mezoterapie</h3>
-        <p>Jedna z nejúčinnějších nechirurgických metod pro maximální hydrataci a omlazení pokožky. Kůži důkladně vyživí kyselinou hyaluronovou, hydratuje ji až do spodních vrstev, zvyšuje její pružnost a zpomaluje její chřadnutí.</p>
+        <p>Mezoterapii nabízím jako jednu z nejúčinnějších nechirurgických metod pro maximální hydrataci a omlazení pokožky. Kůži vám důkladně vyživím kyselinou hyaluronovou a hydratuji ji až do spodních vrstev. Pokožka tak získá pružnost a zpomalí se její chřadnutí.</p>
         <div class="more" id="more-meso">
-          <p>Kyselina hyaluronová se přirozeně nachází v mezibuněčné hmotě lidského těla a její hlavní funkcí je vázat na sebe vodu, potažmo aktivovat růst kolagenových vláken. Metoda využívá právě těchto příznivých vlastností a prostřednictvím mikrocirkulace, důkladné výživy a oxidačních procesů obnovuje životně důležité vlastnosti kožních buněk.</p>
-          <p>Pro maximální a dlouhodobé výsledky doporučujeme ošetření po cca 30 dnech 1–2× zopakovat. První výsledky jsou viditelné ihned, definitivní pak do 7–14 dnů.</p>
-          <p><strong>Kontraindikace:</strong> těhotenství a kojení, akutní virové nebo bakteriální onemocnění, vážná onemocnění, poruchy funkce imunitního systému či lokální infekce kůže (to platí i o rtech, na kterých nesmí být opar). Užívání antibiotik není přímou kontraindikací, doporučujeme však aplikaci podstoupit nejdříve 2 týdny po ukončení léčby. Bezprostředně po ošetření nedoporučujeme cílené opalování a nezapomeňte používat krémy s ochranným faktorem SPF 50.</p>
+          <p>Kyselina hyaluronová se přirozeně nachází v mezibuněčné hmotě lidského těla a její hlavní funkcí je vázat na sebe vodu, potažmo aktivovat růst kolagenových vláken. Při mezoterapii využívám právě těchto příznivých vlastností a díky mikrocirkulaci, důkladné výživě a oxidačním procesům obnovuji životně důležité vlastnosti kožních buněk.</p>
+          <p>Pro maximální a dlouhodobé výsledky doporučuji ošetření po cca 30 dnech 1–2× zopakovat. První výsledky jsou viditelné ihned, definitivní pak do 7–14 dnů.</p>
+          <p><strong>Kontraindikace:</strong> těhotenství a kojení, akutní virové nebo bakteriální onemocnění, vážná onemocnění, poruchy funkce imunitního systému či lokální infekce kůže (to platí i o rtech, na kterých nesmí být opar). Užívání antibiotik není přímou kontraindikací, doporučuji však aplikaci podstoupit nejdříve 2 týdny po ukončení léčby. Bezprostředně po ošetření nedoporučuji cílené opalování a nezapomeňte používat krémy s ochranným faktorem SPF 50.</p>
         </div>
         <button class="link toggle" data-target="more-meso" aria-expanded="false">Více informací</button>
         <div class="svc-foot"><span class="svc-price">od 2.700 Kč</span><span class="svc-time">dle spotřebovaného materiálu</span></div>
@@ -499,17 +521,17 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal" style="--d:.08s">
         <div class="svc-top"><svg class="ico"><use href="#i-teen"/></svg><span class="num">08</span></div>
         <h3>Teen program</h3>
-        <p>Ošetření pro mladou pleť – důkladné čištění (mechanické, peeling, dočištění ultrazvukovou špachtlí), maska s podporou LED terapie červeným světlem a finální kosmetické ošetření.</p>
+        <p>Ošetření pro mladou pleť: pleť důkladně vyčistím (mechanicky, peelingem a dočistím ultrazvukovou špachtlí), nanesu masku s podporou LED terapie červeným světlem a zakončím kosmetickým ošetřením.</p>
         <div class="svc-foot"><span class="svc-price">1.500 Kč</span><span class="svc-time">cca 60 min</span></div>
       </article>
 
       <article class="service reveal">
         <div class="svc-top"><svg class="ico"><use href="#i-thread"/></svg><span class="num">09</span></div>
         <h3>Threading – depilace nití</h3>
-        <p>Velmi účinná metoda odstranění nežádoucích chloupků v oblasti obličeje. Docílíme precizní úpravy obočí a odstranění i jemných chloupků (chmýří) nad horním rtem, na bradě a tvářích. Minimální podráždění, velmi dobře snášeno klientkami, dlouhá účinnost.</p>
+        <p>Depilací nití velmi účinně odstraňuji nežádoucí chloupky v oblasti obličeje. Precizně vám upravím obočí a odstraním i jemné chloupky (chmýří) nad horním rtem, na bradě a tvářích. Pleť se podráždí jen minimálně, klientky metodu velmi dobře snášejí a výsledek vydrží dlouho.</p>
         <div class="more" id="more-nit">
-          <p>Depilace nití je tradiční způsob depilace, který pochází již ze starého Egypta. Provádí se speciálním typem nití ze 100% bavlny, která omotáním a jedním jemným pohybem odstraní celou řadu chloupků i s kořínkem, ne jen jeden, jako je tomu u depilace pinzetou.</p>
-          <p>Výsledkem je krásná a perfektně rovná linie obočí. Na rozdíl od depilace voskem či cukrovou pastou nedochází ke kontaktu s cizí látkou, není odstraněna ochranná vrstva kůže, a tím se zabrání většímu podráždění a nebezpečí vzniku pigmentových skvrn.</p>
+          <p>Depilace nití je tradiční způsob depilace, který pochází již ze starého Egypta. Pracuji se speciální nití ze 100% bavlny, kterou omotáním a jedním jemným pohybem odstraním celou řadu chloupků i s kořínkem, ne jen jeden, jako je tomu u depilace pinzetou.</p>
+          <p>Výsledkem je krásná a perfektně rovná linie obočí. Na rozdíl od depilace voskem či cukrovou pastou nepoužívám žádnou cizí látku a neodstraním ochrannou vrstvu kůže, a tím zabráním většímu podráždění a nebezpečí vzniku pigmentových skvrn.</p>
         </div>
         <button class="link toggle" data-target="more-nit" aria-expanded="false">Více informací</button>
         <div class="svc-foot"><span class="svc-price">od 170 Kč</span></div>
@@ -518,7 +540,7 @@ footer p{color:var(--muted);font-size:14px;margin:0}
       <article class="service reveal" style="--d:.08s">
         <div class="svc-top"><svg class="ico"><use href="#i-lash"/></svg><span class="num">10</span></div>
         <h3>Úprava obočí a řas</h3>
-        <p>Laminace obočí včetně barvení, vytvarování obočí metodou threading, barvení obočí a řas. Lash lifting – natočení řas spolu s barvením, s výsledným efektem hustších a výraznějších vlastních řas.</p>
+        <p>Nabízím laminaci obočí včetně barvení, vytvarování obočí metodou threading a barvení obočí a řas. Při lash liftingu vám řasy natočím a obarvím, takže vaše vlastní řasy budou působit hustší a výraznější.</p>
         <div class="svc-foot"><span class="svc-price">od 200 Kč</span><a href="#ceny" class="link">Ceník</a></div>
       </article>
     </div>
@@ -528,33 +550,38 @@ footer p{color:var(--muted);font-size:14px;margin:0}
 <!-- PERMANENTNÍ MAKEUP -->
 <section id="permanentni-makeup" style="padding-top:0">
   <div class="wrap">
-    <div class="split">
-      <div class="split-img reveal-img">
-        <img src="img/pic-permentnimakeup.png" alt="Permanentní makeup obočí – před a po" width="512" height="512" loading="lazy">
-        <span class="tag">Před / po</span>
-      </div>
+    <div class="pmu-head">
       <div>
         <div class="eyebrow reveal">Výrazná proměna</div>
         <h2 class="h2 reveal" style="--d:.1s">Permanentní makeup</h2>
-        <p class="lead reveal" style="--d:.2s">Obočí je základní dominantou obličeje. Jemné a přirozené kresby obočí lze docílit několika metodami permanentního make-upu:</p>
-        <ul class="list">
-          <li class="reveal"><span>i.</span><div><strong>Vláskování obočí</strong><p>Jemná kresba jednotlivých chloupků obočí působí velmi přirozeně.</p></div></li>
-          <li class="reveal" style="--d:.06s"><span>ii.</span><div><strong>Microblading</strong><p>Vlásková metoda, která je v tomto případě vedena malou čepelkou (tvořenou několika hroty v řadě) v místech růstu obočí. Pracujeme metodou PhiBrows – mezinárodně uznávanou technikou, ve které jsme <a href="#certifikaty">certifikovaní na úrovni Artist</a>.</p></div></li>
-          <li class="reveal" style="--d:.12s"><span>iii.</span><div><strong>3D obočí</strong><p>Použití více barev pigmentů, které vede k plastickému efektu.</p></div></li>
-          <li class="reveal" style="--d:.18s"><span>iv.</span><div><strong>Podstínování obočí</strong><p>Kresba permanentem pomáhá vytvořit perfektní tvar obočí, přičemž barva pigmentu splývá s přirozenou barvou obočí.</p></div></li>
-        </ul>
       </div>
+      <div>
+        <p class="lead reveal" style="--d:.2s">Obočí je základní dominantou obličeje. Jemnou a přirozenou kresbu obočí vám vytvořím několika metodami permanentního make-upu. Vláskové obočí provádím metodou PhiBrows, ve které jsem <a href="#certifikaty">certifikovaná na úrovni Artist</a>.</p>
+      </div>
+    </div>
+
+    <div class="pmu-methods">
+      <article class="reveal"><svg class="ico"><use href="#i-hair"/></svg><span class="num">i.</span><h3>Vláskování obočí</h3><p>Jemně kreslím jednotlivé chloupky obočí, takže výsledek působí velmi přirozeně.</p></article>
+      <article class="reveal" style="--d:.06s"><svg class="ico"><use href="#i-blade"/></svg><span class="num">ii.</span><h3>Microblading</h3><p>Vláskovou kresbu vedu malou čepelkou (tvořenou několika hroty v řadě) v místech růstu obočí. Pracuji metodou PhiBrows – mezinárodně uznávanou technikou.</p></article>
+      <article class="reveal" style="--d:.12s"><svg class="ico"><use href="#i-3d"/></svg><span class="num">iii.</span><h3>3D obočí</h3><p>Používám více barev pigmentů, a obočí tak získá plastický efekt.</p></article>
+      <article class="reveal" style="--d:.18s"><svg class="ico"><use href="#i-shade"/></svg><span class="num">iv.</span><h3>Podstínování obočí</h3><p>Kresbou permanentem vám vytvořím perfektní tvar obočí a barvu pigmentu sladím s přirozenou barvou vašeho obočí.</p></article>
+    </div>
+
+    <div class="pmu-process reveal">
+      <h3 class="pmu-process-title">Jak probíhá permanentní makeup</h3>
+      <ol class="pmu-steps">
+        <li><svg class="ico"><use href="#i-draw"/></svg><span class="step-n">01</span><h4>Konzultace a návrh tvaru</h4><p>Společně probereme vaše představy a vybereme odstín pigmentu. Tvar předkreslím a doladím ho, dokud nebudete spokojená.</p></li>
+        <li><svg class="ico"><use href="#i-drop"/></svg><span class="step-n">02</span><h4>Aplikace pigmentu</h4><p>Pigment vpravuji jemně a precizně zvolenou metodou – tak, aby výsledek působil co nejpřirozeněji.</p></li>
+        <li><svg class="ico"><use href="#i-cal"/></svg><span class="step-n">03</span><h4>Hojení</h4><p>Barva je první dny výraznější a během hojení se zjemní. Dostanete pokyny, jak o ošetřené místo doma pečovat.</p></li>
+        <li><svg class="ico"><use href="#i-check"/></svg><span class="step-n">04</span><h4>Korekce</h4><p>Po 1 až 3 měsících následuje korekce, při které výsledek doladím do finální podoby.</p></li>
+      </ol>
     </div>
 
     <div class="pmu-parts">
       <article class="reveal">
-        <h3>Linky neboli kontura očí</h3>
-        <p>Linka, která je vedená mezi řasami, vytváří iluzi hustých řas a zvýrazňuje oči. Lze ji aplikovat na horním i spodním víčku.</p>
+        <h3><svg class="ico"><use href="#i-lash"/></svg>Linky neboli kontura očí</h3>
+        <p>Linku vedu mezi řasami, takže vytváří iluzi hustých řas a zvýrazní vaše oči. Mohu ji aplikovat na horním i spodním víčku.</p>
         <p>Představte si, že kdykoliv – po ránu, v létě u moře, v kempu u jezera, při sportu – můžete vypadat, jako když jste právě vyšla ze salonu! Ani řasenka není potřebná…</p>
-      </article>
-      <article class="reveal" style="--d:.1s">
-        <h3>Rty</h3>
-        <p>Bezchybná kontura napraví nedostatky v tvaru, osvěží mdlou či ztrácející se barvu rtů. Rtěnka rozpíjející se do vrásek? Na tu můžete zapomenout!</p>
       </article>
     </div>
   </div>
@@ -572,9 +599,9 @@ footer p{color:var(--muted);font-size:14px;margin:0}
         <div class="eyebrow reveal">Výrazné omlazení pokožky</div>
         <h2 class="h2 reveal" style="--d:.1s">Ošetření metodou OxyGeneo</h2>
         <div class="steps reveal" style="--d:.15s"><span>Exfoliace</span><span>Infuze</span><span>Okysličení</span></div>
-        <p class="reveal" style="--d:.2s">Přístrojové ošetření, které spojuje 3 terapie v 1 – exfoliaci, infuzi a okysličení. Díky průlomové technologii poskytuje OxyGeneo™ vynikající výsledky v péči proti stárnutí působením na kůži na hlubší úrovni. Ošetření OxyGeneo™ je vhodné pro všechny typy pleti – jakýkoli etnický původ, zbarvení pleti a citlivou pokožku.</p>
-        <p class="reveal" style="--d:.25s"><strong style="font-weight:500">Hluboká infuze. Kvalitní aktivní látky. Vynikající výsledky proti stárnutí.</strong> Při každém ošetření OxyGeneo™ můžete odstranit jemné linky a vrásky, minimalizujete velikost pórů, hydratujete a vyživujete pleť, oživíte jednotvárný vzhled pleti a zlepšíte celkový vzhled obličeje. Vyberte výživnou kapsli, která vyhovuje vašim specifickým problémům pleti, a zlepšete své výsledky.</p>
-        <p class="reveal" style="--d:.28s"><a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsme certifikovaní · geneO+ TriPollar &amp; oxyGeneo</a></p>
+        <p class="reveal" style="--d:.2s">OxyGeneo™ je přístrojové ošetření, které spojuje 3 terapie v 1 – exfoliaci, infuzi a okysličení. Díky průlomové technologii s ním dosahuji vynikajících výsledků v péči proti stárnutí, protože působí na kůži na hlubší úrovni. Ošetření mohu provést u všech typů pleti – bez ohledu na etnický původ či zbarvení pleti, i u citlivé pokožky.</p>
+        <p class="reveal" style="--d:.25s"><strong style="font-weight:500">Hluboká infuze. Kvalitní aktivní látky. Vynikající výsledky proti stárnutí.</strong> Při každém ošetření OxyGeneo™ vám pomohu odstranit jemné linky a vrásky, zmenšit póry, hydratovat a vyživit pleť, oživit její jednotvárný vzhled a zlepšit celkový vzhled obličeje. Společně vybereme výživnou kapsli, která odpovídá potřebám vaší pleti, a výsledky tak ještě umocníme.</p>
+        <p class="reveal" style="--d:.28s"><a href="#certifikaty" class="cert-badge"><svg><use href="#i-cert"/></svg>Jsem certifikovaná · geneO+ TriPollar &amp; oxyGeneo</a></p>
         <p class="reveal" style="--d:.3s">Více informací o OxyGeneo získáte na webu <a href="http://www.geneoplus.cz" target="_blank" rel="noopener">www.geneoplus.cz</a></p>
       </div>
     </div>
@@ -586,10 +613,10 @@ footer p{color:var(--muted);font-size:14px;margin:0}
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow reveal">Kosmetika, kterou používáme</div>
+        <div class="eyebrow reveal">Kosmetika, kterou používám</div>
         <h2 class="h2 reveal" style="--d:.1s">Pouze kvalitní přípravky</h2>
       </div>
-      <p class="lead reveal" style="--d:.2s">Osvědčené v praxi a na nás samotných.</p>
+      <p class="lead reveal" style="--d:.2s">Osvědčené v praxi i na mně samotné.</p>
     </div>
     <div class="brands">
       <article class="brand reveal">
@@ -597,20 +624,20 @@ footer p{color:var(--muted);font-size:14px;margin:0}
         <h3>Dermatologická péče s AHA a PHA</h3>
         <p>NEOSTRATA® založili dermatologové Dr. Eugene Van Scott a Dr. Ruey Yu, kteří v roce 1974 jako první publikovali účinky alfahydroxykyselin (AHA) na obnovu pleti. Zjistili, že AHA urychlují přirozenou obnovu pokožky a viditelně ji omlazují. Název značky spojuje řecké „neo“ (nový) a latinské „strata“ (vrstvy).</p>
         <p>Zakladatelé si později patentovali také polyhydroxykyseliny (PHA) a další účinné látky. Značka má přes 100 patentů a publikací a profesionální peelingy NEOSTRATA® ProSystem provádějí odborníci ve více než 50 zemích.</p>
-        <p>Přípravky NEOSTRATA® používáme při chemickém peelingu i kosmetickém ošetření. Jsme certifikovaní pro práci s AHA, PHA a retinolem v přípravcích NEOSTRATA®.</p>
+        <p>Přípravky NEOSTRATA® používám při chemickém peelingu i kosmetickém ošetření. Jsem certifikovaná pro práci s AHA, PHA a retinolem v přípravcích NEOSTRATA®.</p>
       </article>
       <article class="brand reveal" style="--d:.12s">
         <div class="brand-logo"><img src="img/exuviancelogo.png" alt="Exuviance" width="708" height="181" loading="lazy"></div>
         <h3>Profesionální kosmetická péče</h3>
         <p>Exuviance® kombinace látek jsou navrhovány tak, aby bylo docíleno viditelné přeměny pokožky nejmodernějšími technologiemi, které jsou dnes v dermatologii dostupné. Přípravky obsahují vysoce vyvinuté směsi AHA/PHA (alfa-hydroxykyselin a polyhydroxykyselin), peptidy, rostlinné látky či antioxidanty. Tyto látky řeší všechny známky stárnutí pokožky.</p>
-        <p>Exuviance® je klinicky ověřená a účinná péče o pokožku. Snižuje vzhled jemných linií a vrásek, zvyšuje pevnost, vyhlazuje strukturu, sjednocuje odstín s cílem mladšího vzhledu pleti.</p>
+        <p>Exuviance® je klinicky ověřená a účinná péče o pokožku. Snižuje vzhled jemných linií a vrásek, zvyšuje pevnost, vyhlazuje strukturu a sjednocuje odstín s cílem mladšího vzhledu pleti. Přípravky Exuviance® používám při kosmetickém ošetření.</p>
       </article>
       <article class="brand reveal" style="--d:.24s">
         <div class="brand-logo"><span class="brand-name">IDENEL</span></div>
         <h3>Korejská klinická kosmetika</h3>
         <p>IDENEL je profesionální značka z Jižní Koreje, kterou vyvíjí tým vedený výzkumníkem v oblasti nanotechnologií Dr. Byungho Songem.</p>
-        <p><strong>Technologie Altum™.</strong> Pleť přirozeně propustí jen zlomek účinných látek, které na ni naneseme – podle značky jen asi 0,3 %. Patentovaná technologie Altum™ vznikla po letech výzkumu právě proto, aby tuto hranici překonala a doručila aktivní látky přesně a hluboko do pleti, místo aby zůstaly jen na jejím povrchu.</p>
-        <p><strong>Altum™ peptidy.</strong> Vývojem Altum™ Peptide značka začínala. Peptidy jsou známé svým výjimečným účinkem na zlepšení pružnosti pleti a redukci vrásek.</p>
+        <p><strong>Technologie Altum™.</strong> Pleť přirozeně propustí jen zlomek účinných látek, které se na ni nanesou – podle značky jen asi 0,3 %. Patentovaná technologie Altum™ vznikla po letech výzkumu právě proto, aby tuto hranici překonala a doručila aktivní látky přesně a hluboko do pleti, místo aby zůstaly jen na jejím povrchu.</p>
+        <p><strong>Altum™ peptidy.</strong> Vývojem Altum™ Peptide značka začínala. Peptidy jsou známé svým výjimečným účinkem na zlepšení pružnosti pleti a redukci vrásek. Přípravky IDENEL používám při ošetření IDENEL.</p>
       </article>
     </div>
   </div>
@@ -624,7 +651,7 @@ footer p{color:var(--muted);font-size:14px;margin:0}
         <div class="eyebrow reveal">Ceník</div>
         <h2 class="h2 reveal" style="--d:.1s">Ceník služeb</h2>
       </div>
-      <p class="lead reveal" style="--d:.2s">Stálým klientům poskytujeme individuální ceny.</p>
+      <p class="lead reveal" style="--d:.2s">Stálým klientům poskytuji individuální ceny.</p>
     </div>
 
     <div class="pricelist">
@@ -678,7 +705,7 @@ footer p{color:var(--muted);font-size:14px;margin:0}
     </div>
 
     <div class="price-foot reveal">
-      <p>Ke kosmetickým ošetřením lze dle přání doplnit threading, barvení obočí či řas za příplatek.</p>
+      <p>Ke kosmetickým ošetřením vám na přání za příplatek doplním threading nebo barvení obočí či řas.</p>
       <a href="download/cenik_angeleve2026.pdf" class="btn" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#i-dl"/></svg>Ceník ke stažení (PDF)</a>
     </div>
   </div>
